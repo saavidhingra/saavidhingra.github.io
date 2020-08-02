@@ -6,8 +6,16 @@
     padding-top: 150px;
   }
 
+  .header2 h2{
+    float: center;
+    text-align: center; /* center the text */
+    color: white; /* white text color */
+    font-size: 60px;
+    padding-top: 150px;
+  }
+
   body {
-    height: 729px; /* Used to enable scrolling */
+    height: 800px; /* Used to enable scrolling */
     background-color: #861657;
     background-image: linear-gradient(326deg, #861657 0%, #ffa69e 74%);
   }
@@ -19,7 +27,7 @@
     color: white;
     text-decoration: none;
     font-size: 30px;
-    width: 15%;
+    width: auto;
 
   }
   
@@ -33,7 +41,7 @@
     .navbar a {
       float: none;
       display: block;
-      width: 100%;
+      width: auto;
       text-align: left; /* If you want the text to be left-aligned on small screens */
     }
   }
