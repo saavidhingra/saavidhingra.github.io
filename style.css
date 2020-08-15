@@ -54,7 +54,7 @@ h1, h2 {
 	color: white;
 }
 
-.dix
+.context
 {
 	text-align: center;
 	vertical-align: middle;
@@ -75,7 +75,7 @@ h1, h2 {
 	color: inherit;
 }
 
-.dix:hover
+.context:hover
 {
 	height: 3em;
 	width: 3em;
