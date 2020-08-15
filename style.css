@@ -34,14 +34,16 @@ h1 {
   line-height: .8em;
 }
 
-h2 {
-  font-size: 1.2em;
+h2, p {
+  font-size: 1.8em;
   font-weight: 300;
   margin: 5px 0;
+  text-align: center;
+  max-width: 800px;
 }
 
-h1, h2 {
-  text-shadow: rgba(0, 0, 0, .2) 0 2px 3px;
+h1, h2, p {
+  text-shadow: rgba(0, 0, 0, .2) 2px 3px;
 }
 
 .box
@@ -51,7 +53,9 @@ h1, h2 {
 	height: 3.3em;
 	width: 3.3em;
 	line-height: 3.3em;
-	color: white;
+  color: white;
+  padding-bottom: 20px;
+  padding-top: 90px;
 }
 
 .context
@@ -64,15 +68,15 @@ h1, h2 {
 	width: 3em;
 	line-height: 3em;
 	display: inline-block;
-	border-radius: 20%;
-	border-width: 0.03em;
-	transition: 0.3s ease;
+	border-radius: 50%;
+	border-width: 0.2em;
+  transition: 0.5s ease;
 }
 
 .box a
 {
 	text-decoration: none;
-	color: inherit;
+  color: inherit;
 }
 
 .context:hover
@@ -82,7 +86,7 @@ h1, h2 {
 	line-height: 3em;
 	background-color: white;
 	color: black;
-	transition: 0.2s ease;
+	transition: 0.5s ease;
 }
 
 @media(max-width: 768px) {
@@ -108,6 +112,7 @@ h1, h2 {
     display: none;
   }
 }
+
 
 body {
 	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
