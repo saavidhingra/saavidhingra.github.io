@@ -1,47 +1,128 @@
-.header h1{
-    float: center;
-    text-align: center; /* center the text */
-    color: white; /* white text color */
-    font-size: 150px;
-    padding-top: 150px;
-  }
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
 
-  .header2 h2{
-    float: center;
-    text-align: center; /* center the text */
-    color: white; /* white text color */
-    font-size: 60px;
-    padding-top: 150px;
-  }
+body {
+  color: #fff;
+  font-family: 'Source Sans Pro', 'Helvetica', 'Arial', sans-serif;
+  overflow: hidden;
+}
 
-  body {
-    height: 800px; /* Used to enable scrolling */
-    background-color: #861657;
-    background-image: linear-gradient(326deg, #861657 0%, #ffa69e 74%);
-  }
-  
-  /* Navigation links */
-  .navbar a {
-    float: center;
-    padding: 15px;
-    color: white;
-    text-decoration: none;
-    font-size: 30px;
-    width: auto;
 
+body.fade {
+    opacity: 0;
+    transition: none;
+}
+
+.content {
+  background-size: 600% 600%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  position: relative;
+}
+
+
+h1 {
+  font-family: 'Raleway', 'Helvetica', 'Arial', sans-serif;
+  font-size: 6em;
+  font-weight: 800;
+  line-height: .8em;
+}
+
+h2 {
+  font-size: 1.2em;
+  font-weight: 300;
+  margin: 5px 0;
+}
+
+h1, h2 {
+  text-shadow: rgba(0, 0, 0, .2) 0 2px 3px;
+}
+
+.box
+{
+	margin: 0 2.2em;
+	display: inline-block;
+	height: 3.3em;
+	width: 3.3em;
+	line-height: 3.3em;
+	color: white;
+}
+
+.dix
+{
+	text-align: center;
+	vertical-align: middle;
+	font-size: 2em;
+	color: white;
+	height: 3em;
+	width: 3em;
+	line-height: 3em;
+	display: inline-block;
+	border-radius: 20%;
+	border-width: 0.03em;
+	transition: 0.3s ease;
+}
+
+.box a
+{
+	text-decoration: none;
+	color: inherit;
+}
+
+.dix:hover
+{
+	height: 3em;
+	width: 3em;
+	line-height: 3em;
+	background-color: white;
+	color: black;
+	transition: 0.2s ease;
+}
+
+@media(max-width: 768px) {
+  h1 {
+    font-size: 5em;
   }
-  
-  /* Add a background color on mouse-over */
-  .navbar a:hover {
-    background-color: rgb(0, 0, 0);
+  h2 {
+    font-size: 1em;
+    margin: 15px 0;
   }
-  
-  /* Add responsiveness - on screens less than 500px, make the navigation links appear on top of each other, instead of next to each other */
-  @media screen and (max-width: 500px) {
-    .navbar a {
-      float: none;
-      display: block;
-      width: auto;
-      text-align: left; /* If you want the text to be left-aligned on small screens */
-    }
+  .content {
+    padding: 20px;
+    text-align: center;
   }
+  .content {
+    max-width: 100%;
+  }
+}
+
+@media(max-width: 768px) 
+{
+  .ellipsis {
+    display: none;
+  }
+}
+
+body {
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 10s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
