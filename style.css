@@ -12,8 +12,8 @@ body {
 
 
 body.fade {
-    opacity: 0;
-    transition: none;
+    opacity: 90;
+    transition: ease;
 }
 
 .content {
@@ -40,6 +40,7 @@ h2, p {
   margin: 5px 0;
   text-align: center;
   max-width: 800px;
+  padding-bottom: 10px;
 }
 
 h1, h2, p {
@@ -54,11 +55,11 @@ h1, h2, p {
 	width: 3.3em;
 	line-height: 3.3em;
   color: white;
-  padding-bottom: 20px;
-  padding-top: 90px;
+  padding-bottom: 10px;
+  padding-top: 50px;
 }
 
-.context
+.context, .context1, .context2
 {
 	text-align: center;
 	vertical-align: middle;
@@ -89,6 +90,26 @@ h1, h2, p {
 	transition: 0.5s ease;
 }
 
+.context1:hover
+{
+	height: 3em;
+	width: 3em;
+	line-height: 3em;
+	background-color: white;
+	color: rgb(255, 22, 185);
+	transition: 0.5s ease;
+}
+
+.context2:hover
+{
+	height: 3em;
+	width: 3em;
+	line-height: 3em;
+	background-color: white;
+	color: #23d5ab;
+	transition: 0.5s ease;
+}
+
 @media(max-width: 768px) {
   h1 {
     font-size: 5em;
@@ -112,7 +133,6 @@ h1, h2, p {
     display: none;
   }
 }
-
 
 body {
 	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
