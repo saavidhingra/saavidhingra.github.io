@@ -12,8 +12,8 @@ body {
 
 
 body.fade {
-    opacity: 90;
-    transition: ease;
+    opacity: 0;
+    transition: none;
 }
 
 .content {
@@ -34,7 +34,7 @@ h1 {
   line-height: .8em;
 }
 
-h2, p {
+h2, p, h3 {
   font-size: 1.8em;
   font-weight: 300;
   margin: 5px 0;
@@ -43,7 +43,7 @@ h2, p {
   padding-bottom: 10px;
 }
 
-h1, h2, p {
+h1, h2, p, h3 {
   text-shadow: rgba(0, 0, 0, .2) 2px 3px;
 }
 
